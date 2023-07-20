@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <!-- Latest Bootstrap CSS -->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/botstrap.min.css">
+        <link rel="stylesheet" type="text/html" href="styles.css">
+    </head>
+
+    <body>
+        <h3 class="py-3 text-center bg-primary text-white-50">Weather App</h3>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="">
+                        <label for="locationInput" class="fw-semibold">Enter Location:</label>
+                        <input type="text" class="form-control my-1" id="locationInput"
+                            placeholder="Enter city name, e.g., New York" value="dhaka">
+                    </div>
+                    <button type="button" class="btn btn-primary w-100 py-1" id="getWeatherBtn">Get
+                        Weather</button>
+                    <button class="btn btn-sm btn-success w-100 text-center my-2">Location</button>
+                </div>
+                <div class="col-md-8">
+                    <div id="displayWeather">
+                        <div class="d-flex justify-content-between bg-primary py-2 px-3 rounded-1 text-white">
+                            <div class="flex-shrink-0">
+                                <h5 id="name" class="fw-bold">name ( date )</h5>
+                                <ul class="list-group list-group-flush small">
+                                    <li class="list-group-item bg-transparent border-0 p-0 text-white">Temperature:</li>
+                                    <li class="list-group-item bg-transparent border-0 p-0 text-white">Wind:</li>
+                                    <li class="list-group-item bg-transparent border-0 p-0 text-white">Humidity:</li>
+                                    <li class="list-group-item bg-transparent border-0 p-0 text-white">
+                                        Sunrise:
+                                    </li>
+                                    <li class="list-group-item bg-transparent border-0 p-0 text-white">
+                                        Sunset:
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-grow-0 text-end">
+                                <img src="images/weather.png" class="img-fluid h-auto w-25" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="fw-bold my-2">5-Day Forecast</h6>
+                    <div class="row justify-items-center gap-2">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card bg-secondary mb-3 p-2 border-secondary-subtle text-white">
+                                <div class="p-0 fw-medium small">( 22-07-2023 )</div>
+                                <div class="card-body border-0 p-0">
+                                    <img src="images/weather.png" class="img-fluid h-auto w-75" alt="">
+                                </div>
+                                <div class="card-footer border-0 p-0">
+                                    <ul class="list-group list-group-flush text-muted small">
+                                        <li class="list-group-item bg-transparent border-0 p-0 text-white small">
+                                            Temperature:
+                                        </li>
+                                        <li class="list-group-item bg-transparent border-0 p-0 text-white small">Wind:
+                                        </li>
+                                        <li class="list-group-item bg-transparent border-0 p-0 text-white small">
+                                            Humidity:
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="weatherData"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Latest Bootstrap and Custom JS -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
